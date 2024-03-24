@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:23-03-2024
+## Date: 23-03-2024
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -24,7 +24,7 @@ Testing the webserver.
 '''
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
-content=
+content="""
 
 <!DOCTYPE html>
 <html>
@@ -98,7 +98,7 @@ content=
 </body>
 </html>
     
-
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
