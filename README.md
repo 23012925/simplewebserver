@@ -25,6 +25,7 @@ Testing the webserver.
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content="""
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,6 +97,7 @@ content="""
 </tr>
 </body>
 </html>
+    
 """
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
